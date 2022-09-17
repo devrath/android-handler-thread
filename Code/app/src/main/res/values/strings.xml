@@ -3,7 +3,11 @@
     <string name="handler_1">Handler-1</string>
     <string name="handler_2">Handler-2</string>
     <string name="handler_3">Handler-3</string>
-    <string name="handler_thread_str">HandlerThread</string>
+    <string name="handler_thread_str">HandlerThread Demo</string>
     <string name="stop_thread">Stop Thread</string>
     <string name="restart_thread">Restart Thread</string>
+    <string name="handler_demo">Handler Demo</string>
+    <string name="handler_thread_demo">HandlerThread Demo</string>
+    <string name="handler_demo_str">Handler Demo</string>
+    <string name="selection_screen">Selection Screen</string>
 </resources>
