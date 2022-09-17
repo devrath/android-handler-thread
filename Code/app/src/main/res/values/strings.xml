@@ -10,4 +10,6 @@
     <string name="handler_thread_demo">HandlerThread Demo</string>
     <string name="handler_demo_str">Handler Demo</string>
     <string name="selection_screen">Selection Screen</string>
+    <string name="thread_demo">Thread Demo</string>
+    <string name="thread_app_demo">Thread Demo</string>
 </resources>
