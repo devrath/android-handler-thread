@@ -1,4 +1,4 @@
-package com.droid.code
+package com.droid.code.handlerThread
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,17 +6,19 @@ import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import com.droid.code.databinding.ActivityMainBinding
-import com.droid.code.workers.HandlerOne
-import com.droid.code.workers.HandlerThree
-import com.droid.code.workers.HandlerTwo
+import com.droid.code.handlerThread.workers.HandlerOne
+import com.droid.code.handlerThread.workers.HandlerThree
+import com.droid.code.handlerThread.workers.HandlerTwo
 
-class MainActivity : AppCompatActivity() {
+class HandlerThreadActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val handlerOne = HandlerOne(HandlerOne::class.java.name)
-    private val handlerTwo = HandlerTwo(HandlerTwo::class.java.name)
-    private val handlerThree = HandlerThree(HandlerThree::class.java.name)
+    private lateinit var handlerOne : HandlerOne
+    private lateinit var handlerTwo : HandlerTwo
+    private lateinit var handlerThree : HandlerThree
+
+    init { startThreads() }
 
     private val mainThreadHandler = object:  Handler(Looper.getMainLooper()) {
         override fun handleMessage(msg: Message) {
@@ -54,6 +56,25 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        binding.btnStopThreadId.setOnClickListener { stopThreads() }
+        binding.btnRestartThreadId.setOnClickListener { startThreads() }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        stopThreads()
+    }
+
+    private fun startThreads() {
+        handlerOne = HandlerOne(HandlerOne::class.java.name)
+        handlerTwo = HandlerTwo(HandlerTwo::class.java.name)
+        handlerThree = HandlerThree(HandlerThree::class.java.name)
+    }
+
+    private fun stopThreads() {
+        handlerOne.stopThread();
+        handlerTwo.stopThread();
+        handlerThree.stopThread();
     }
 
     private fun sendMessage(data: String, delay: Long) {

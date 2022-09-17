@@ -1,4 +1,4 @@
-package com.droid.code.workers
+package com.droid.code.handlerThread.workers
 
 import android.os.Handler
 import android.os.HandlerThread
@@ -17,5 +17,9 @@ class HandlerOne(handlerTag: String) : HandlerThread(handlerTag) {
         return this@HandlerOne
     }
 
+    fun stopThread() {
+        handler.removeCallbacksAndMessages(null);
+        handler.looper.quit();
+    }
 
 }
