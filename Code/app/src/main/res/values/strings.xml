@@ -15,4 +15,8 @@
     <string name="runnable_1">Runnable-1</string>
     <string name="runnable_2">Runnable-2</string>
     <string name="runnable_3">Runnable-3</string>
+    <string name="thread_demo">Thread Demo</string>
+    <string name="thread_1">Thread-1</string>
+    <string name="thread_2">Thread-2</string>
+    <string name="thread_3">Thread-3</string>
 </resources>

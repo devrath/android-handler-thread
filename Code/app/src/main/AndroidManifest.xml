@@ -33,6 +33,10 @@
         <activity android:name=".runnable.RunnableActivity"
             android:label="@string/thread_app_demo"/>
 
+        <activity android:name=".thread.ThreadActivity"
+            android:label="@string/thread_demo"/>
+
+
     </application>
 
 </manifest>
