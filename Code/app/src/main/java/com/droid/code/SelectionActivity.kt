@@ -2,11 +2,10 @@ package com.droid.code
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.droid.code.databinding.ActivityHandlerThreadBinding
 import com.droid.code.databinding.ActivitySelectionBinding
 import com.droid.code.handler.HandlerActivity
 import com.droid.code.handlerThread.HandlerThreadActivity
-import com.droid.code.thread.ThreadActivity
+import com.droid.code.runnable.RunnableActivity
 import com.droid.code.utils.openActivity
 
 class SelectionActivity : AppCompatActivity(){
@@ -18,8 +17,8 @@ class SelectionActivity : AppCompatActivity(){
         binding = ActivitySelectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnThreadDemoId.setOnClickListener {
-            openActivity(ThreadActivity::class.java)
+        binding.btnRunnableDemoId.setOnClickListener {
+            openActivity(RunnableActivity::class.java)
         }
 
         binding.btnHandlerDemoId.setOnClickListener {

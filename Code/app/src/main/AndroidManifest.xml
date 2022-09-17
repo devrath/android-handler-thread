@@ -30,7 +30,7 @@
         <activity android:name=".handlerThread.HandlerThreadActivity"
             android:label="@string/handler_thread_str"/>
 
-        <activity android:name=".thread.ThreadActivity"
+        <activity android:name=".runnable.RunnableActivity"
             android:label="@string/thread_app_demo"/>
 
     </application>

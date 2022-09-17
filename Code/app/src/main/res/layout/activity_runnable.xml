@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="@dimen/screen_padding"
-    android:gravity="center">
+    tools:context=".handlerThread.HandlerThreadActivity">
 
     <Button
-        android:id="@+id/btnRunnableDemoId"
+        android:id="@+id/btnPublishOneId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/runnable_demo" />
+        android:text="@string/runnable_1" />
 
     <Button
-        android:id="@+id/btnHandlerDemoId"
+        android:id="@+id/btnPublishTwoId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/handler_demo" />
+        android:text="@string/runnable_2" />
 
     <Button
-        android:id="@+id/btnHandlerThreadDemoId"
+        android:id="@+id/btnPublishThreeId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/handler_thread_demo" />
+        android:text="@string/runnable_3" />
+
 
 </LinearLayout>
