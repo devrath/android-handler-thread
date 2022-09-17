@@ -3,12 +3,20 @@ package com.droid.code.runnable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivityRunnableBinding
+import com.droid.code.runnable.workers.CustomRunnableOne
+import com.droid.code.runnable.workers.CustomRunnableThree
+import com.droid.code.runnable.workers.CustomRunnableTwo
+
+val TAG_NARUTO = "Naruto"
 
 class RunnableActivity  : AppCompatActivity() {
 
-    val TAG = "Naruto"
-
     private lateinit var binding: ActivityRunnableBinding
+
+    lateinit var  thread1 : Thread
+    lateinit var  thread2 : Thread
+    lateinit var  thread3 : Thread
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,44 +25,41 @@ class RunnableActivity  : AppCompatActivity() {
 
 
         binding.btnPublishOneId.setOnClickListener {
-            val thread1 = Thread(runnable1)
+            val runnable = CustomRunnableOne()
+            thread1 = Thread(runnable)
+            thread1.name = CustomRunnableOne::javaClass.name
             thread1.start()
         }
 
         binding.btnPublishTwoId.setOnClickListener {
-            val thread2 = Thread(runnable2)
+            val runnable = CustomRunnableTwo()
+            thread2 = Thread(runnable)
+            thread2.name = CustomRunnableTwo::javaClass.name
             thread2.start()
         }
 
         binding.btnPublishThreeId.setOnClickListener {
-            val thread3 = Thread(runnable3)
+            val runnable = CustomRunnableThree()
+            thread3 = Thread(runnable)
+            thread3.name = CustomRunnableThree::javaClass.name
             thread3.start()
         }
 
-    }
-
-
-    private val runnable1 = Runnable {
-        val TAG_ONE = "one"
-        for (i in 0 until 5) {
-            Thread.sleep(500L)
-            println(TAG.plus("--$i--").plus("Current Runnable-->$TAG_ONE"))
+        binding.btnStopThreadId.setOnClickListener {
+            stopThreads()
         }
+
     }
 
-    private val runnable2 = Runnable {
-        val TAG_TWO = "two"
-        for (i in 0 until 5) {
-            Thread.sleep(500L)
-            println(TAG.plus("--$i--").plus("Current Runnable-->$TAG_TWO"))
+    private fun stopThreads() {
+        if(::thread1.isInitialized){
+            thread1.interrupt()
         }
-    }
-
-    private val runnable3 = Runnable {
-        val TAG_THREE = "three"
-        for (i in 0 until 5) {
-            Thread.sleep(500L)
-            println(TAG.plus("--$i--").plus("Current Runnable-->$TAG_THREE"))
+        if(::thread2.isInitialized){
+            thread2.interrupt()
+        }
+        if(::thread3.isInitialized){
+            thread3.interrupt()
         }
     }
 
