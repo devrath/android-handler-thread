@@ -1,10 +1,9 @@
-package com.droid.code
+package com.droid.code.workers
 
 import android.os.Handler
 import android.os.HandlerThread
-import android.os.Looper
 
-class Worker(handlerTag: String) : HandlerThread(handlerTag) {
+class HandlerThree(handlerTag: String) : HandlerThread(handlerTag) {
 
     private lateinit var handler : Handler
 
@@ -13,9 +12,9 @@ class Worker(handlerTag: String) : HandlerThread(handlerTag) {
         handler = Handler(looper)
     }
 
-    public fun execute( runnable: Runnable) : Worker {
+    fun execute( runnable: Runnable) : HandlerThree {
         handler.post(runnable)
-        return this@Worker
+        return this@HandlerThree
     }
 
 

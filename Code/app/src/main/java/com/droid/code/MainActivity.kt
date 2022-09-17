@@ -6,15 +6,21 @@ import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import com.droid.code.databinding.ActivityMainBinding
+import com.droid.code.workers.HandlerOne
+import com.droid.code.workers.HandlerThree
+import com.droid.code.workers.HandlerTwo
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val worker : Worker = Worker("Worker")
+    private val handlerOne = HandlerOne(HandlerOne::class.java.name)
+    private val handlerTwo = HandlerTwo(HandlerTwo::class.java.name)
+    private val handlerThree = HandlerThree(HandlerThree::class.java.name)
 
-    val handler = object:  Handler(Looper.getMainLooper()) {
+    private val mainThreadHandler = object:  Handler(Looper.getMainLooper()) {
         override fun handleMessage(msg: Message) {
+            // ---> Here the UI thread is updated
             binding.txtDisplayId.text = msg.obj as String?
         }
     }
@@ -25,25 +31,44 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnPublishOneId.setOnClickListener {
-            worker.execute { sendMessage("Message-1") }
+            handlerOne.execute {
+                val messageToSend = "Message-1"
+                val time = 1000L
+                sendMessage(data = messageToSend,delay = time)
+            }
         }
 
         binding.btnPublishTwoId.setOnClickListener {
-            worker.execute { sendMessage("Message-2") }
+            handlerTwo.execute {
+                val messageToSend = "Message-2"
+                val time = 2000L
+                sendMessage(messageToSend,delay = time)
+            }
         }
 
         binding.btnPublishThreeId.setOnClickListener {
-            worker.execute { sendMessage("Message-3") }
+            handlerThree.execute {
+                val messageToSend = "Message-3"
+                val time = 3000L
+                sendMessage(messageToSend,delay = time)
+            }
         }
 
     }
 
-    private fun sendMessage(data: String) {
+    private fun sendMessage(data: String, delay: Long) {
         try {
-            Thread.sleep(1500)
+            // <-----> Perform a time consuming operation <----->
+            Thread.sleep(delay)
+            // <-----> Perform a time consuming operation <----->
+
+            // <-----> Wrap the data <----->
             val msgToSend = Message.obtain()
             msgToSend.obj = data
-            handler.sendMessage(msgToSend)
+            // <-----> Wrap the data <----->
+
+            // Publish to main thread
+            mainThreadHandler.sendMessage(msgToSend)
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
