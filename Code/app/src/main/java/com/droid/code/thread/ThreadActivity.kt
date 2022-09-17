@@ -13,31 +13,45 @@ class ThreadActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityThreadBinding
 
+    lateinit var threadOne : CustomThreadOne
+    lateinit var threadTwo : CustomThreadTwo
+    lateinit var threadThree : CustomThreadThree
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityThreadBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnPublishOneId.setOnClickListener {
-            val thread = CustomThreadOne()
-            thread.name = CustomThreadOne::class.java.name;
-            thread.start()
+            threadOne = CustomThreadOne()
+            threadOne.name = CustomThreadOne::class.java.name;
+            threadOne.start()
         }
 
         binding.btnPublishTwoId.setOnClickListener {
-            val thread = CustomThreadTwo()
-            thread.name = CustomThreadTwo::class.java.name;
-            thread.start()
+            threadTwo = CustomThreadTwo()
+            threadTwo.name = CustomThreadTwo::class.java.name;
+            threadTwo.start()
         }
 
         binding.btnPublishThreeId.setOnClickListener {
-            val thread = CustomThreadThree()
-            thread.name = CustomThreadThree::class.java.name;
-            thread.start()
+            threadThree = CustomThreadThree()
+            threadThree.name = CustomThreadThree::class.java.name;
+            threadThree.start()
         }
 
-        // binding.btnStopThreadId.setOnClickListener { stopThreads() }
-        // binding.btnRestartThreadId.setOnClickListener { startThreads() }
+        binding.btnStopThreadId.setOnClickListener { stopThreads() }
     }
 
+    private fun stopThreads() {
+        if(::threadOne.isInitialized){
+            threadOne.interrupt()
+        }
+        if(::threadTwo.isInitialized){
+            threadTwo.interrupt()
+        }
+        if(::threadThree.isInitialized){
+            threadThree.interrupt()
+        }
+    }
 }
