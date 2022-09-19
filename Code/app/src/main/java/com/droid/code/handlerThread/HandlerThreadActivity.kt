@@ -35,7 +35,7 @@ class HandlerThreadActivity : AppCompatActivity() {
         binding.btnPublishOneId.setOnClickListener {
             handlerOne.execute {
                 val messageToSend = "Message-1"
-                val time = 1000L
+                val time = 4000L
                 sendMessage(data = messageToSend,delay = time)
             }
         }
@@ -43,7 +43,7 @@ class HandlerThreadActivity : AppCompatActivity() {
         binding.btnPublishTwoId.setOnClickListener {
             handlerTwo.execute {
                 val messageToSend = "Message-2"
-                val time = 2000L
+                val time = 3000L
                 sendMessage(messageToSend,delay = time)
             }
         }
@@ -51,7 +51,7 @@ class HandlerThreadActivity : AppCompatActivity() {
         binding.btnPublishThreeId.setOnClickListener {
             handlerThree.execute {
                 val messageToSend = "Message-3"
-                val time = 3000L
+                val time = 2000L
                 sendMessage(messageToSend,delay = time)
             }
         }
