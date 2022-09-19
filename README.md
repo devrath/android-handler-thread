@@ -4,7 +4,8 @@
 This repository describes how to use handler thread to publish a data from non UI thread to android main thread
 
 ## **`𝙼𝚎𝚍𝚒𝚞𝚖 𝚊𝚛𝚝𝚒𝚌𝚕𝚎`** 📺
-Describing how core threading concepts on Thread, Runnable, Handler, Looper, MessageQueue, HandlerThread are used in android
+[_**𝚃𝚑𝚒𝚜 𝚕𝚒𝚗𝚔 𝚍𝚎𝚜𝚌𝚛𝚒𝚋𝚎𝚜 𝚑𝚘𝚠 𝚌𝚘𝚛𝚎 𝚝𝚑𝚛𝚎𝚊𝚍𝚒𝚗𝚐 𝚌𝚘𝚗𝚌𝚎𝚙𝚝𝚜 𝚘𝚗 𝚃𝚑𝚛𝚎𝚊𝚍, 𝚁𝚞𝚗𝚗𝚊𝚋𝚕𝚎, 𝙷𝚊𝚗𝚍𝚕𝚎𝚛, 𝙻𝚘𝚘𝚙𝚎𝚛, 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚀𝚞𝚎𝚞𝚎, 𝙷𝚊𝚗𝚍𝚕𝚎𝚛𝚃𝚑𝚛𝚎𝚊𝚍 𝚊𝚛𝚎 𝚞𝚜𝚎𝚍 𝚒𝚗 𝚊𝚗𝚍𝚛𝚘𝚒𝚍**_](
+https://medium.com/@devrath.dev595/decoding-android-core-threading-concepts-on-thread-runnable-handler-looper-messagequeue-21a2f7aa6e4a)
 
 ## **`𝙲𝚘𝚗𝚝𝚛𝚒𝚋𝚞𝚝𝚎`** 🙋‍♂️
 Read [contribution guidelines](CONTRIBUTING.md) for more information regarding contribution.
