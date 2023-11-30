@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Code"
+        tools:targetApi="31">
+        <activity
+            android:name=".SelectionActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Code">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".handler.HandlerActivity"
+            android:label="@string/handler_demo_str"/>
+
+        <activity android:name=".handlerThread.HandlerThreadActivity"
+            android:label="@string/handler_thread_str"/>
+
+        <activity android:name=".runnable.RunnableActivity"
+            android:label="@string/thread_app_demo"/>
+
+        <activity android:name=".thread.ThreadActivity"
+            android:label="@string/thread_demo"/>
+    </application>
+
+</manifest>
