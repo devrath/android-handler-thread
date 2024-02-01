@@ -7,6 +7,9 @@
 [_**𝚃𝚑𝚒𝚜 𝚕𝚒𝚗𝚔 𝚍𝚎𝚜𝚌𝚛𝚒𝚋𝚎𝚜 𝚑𝚘𝚠 𝚌𝚘𝚛𝚎 𝚝𝚑𝚛𝚎𝚊𝚍𝚒𝚗𝚐 𝚌𝚘𝚗𝚌𝚎𝚙𝚝𝚜 𝚘𝚗 𝚃𝚑𝚛𝚎𝚊𝚍, 𝚁𝚞𝚗𝚗𝚊𝚋𝚕𝚎, 𝙷𝚊𝚗𝚍𝚕𝚎𝚛, 𝙻𝚘𝚘𝚙𝚎𝚛, 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚀𝚞𝚎𝚞𝚎, 𝙷𝚊𝚗𝚍𝚕𝚎𝚛𝚃𝚑𝚛𝚎𝚊𝚍 𝚊𝚛𝚎 𝚞𝚜𝚎𝚍 𝚒𝚗 𝚊𝚗𝚍𝚛𝚘𝚒𝚍**_](
 https://medium.com/@devrath.dev595/decoding-android-core-threading-concepts-on-thread-runnable-handler-looper-messagequeue-21a2f7aa6e4a)
 
+## **`Understanding concurrency, Threading, Synchronization`** 📼
+
+
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 𝙸𝚏 𝚢𝚘𝚞 𝚏𝚎𝚎𝚕 𝚕𝚒𝚔𝚎 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚖𝚎 𝚊 𝚌𝚘𝚏𝚏𝚎𝚎 𝚏𝚘𝚛 𝚖𝚢 𝚎𝚏𝚏𝚘𝚛𝚝𝚜, 𝙸 𝚠𝚘𝚞𝚕𝚍 𝚐𝚛𝚎𝚊𝚝𝚕𝚢 𝚊𝚙𝚙𝚛𝚎𝚌𝚒𝚊𝚝𝚎 𝚒𝚝.</br>
 <a href="https://www.buymeacoffee.com/devrath" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="𝙱𝚞𝚢 𝙼𝚎 𝙰 𝙲𝚘𝚏𝚏𝚎𝚎" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
