@@ -8,7 +8,7 @@
 https://medium.com/@devrath.dev595/decoding-android-core-threading-concepts-on-thread-runnable-handler-looper-messagequeue-21a2f7aa6e4a)
 
 ## **`𝚄𝚗𝚍𝚎𝚛𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚌𝚘𝚗𝚌𝚞𝚛𝚛𝚎𝚗𝚌𝚢, 𝚃𝚑𝚛𝚎𝚊𝚍𝚒𝚗𝚐, 𝚂𝚢𝚗𝚌𝚑𝚛𝚘𝚗𝚒𝚣𝚊𝚝𝚒𝚘𝚗`** 📼
-* [What is a thread](https://github.com/devrath/android-handler-thread/wiki/What-is-a-thread)
+* [Basic threading concepts](https://github.com/devrath/android-handler-thread/wiki/Basic-threading-concepts)
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
