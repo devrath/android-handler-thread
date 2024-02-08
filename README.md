@@ -8,7 +8,7 @@
 https://medium.com/@devrath.dev595/decoding-android-core-threading-concepts-on-thread-runnable-handler-looper-messagequeue-21a2f7aa6e4a)
 
 ## **`Fundamentals`** 📼
-* [𝚄𝚗𝚍𝚎𝚛𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚌𝚘𝚗𝚌𝚞𝚛𝚛𝚎𝚗𝚌𝚢, 𝚃𝚑𝚛𝚎𝚊𝚍𝚒𝚗𝚐, 𝚂𝚢𝚗𝚌𝚑𝚛𝚘𝚗𝚒𝚣𝚊𝚝𝚒𝚘𝚗](https://github.com/devrath/android-handler-thread/wiki/%F0%9D%9A%84%F0%9D%9A%97%F0%9D%9A%8D%F0%9D%9A%8E%F0%9D%9A%9B%F0%9D%9A%9C%F0%9D%9A%9D%F0%9D%9A%8A%F0%9D%9A%97%F0%9D%9A%8D%F0%9D%9A%92%F0%9D%9A%97%F0%9D%9A%90-%F0%9D%9A%8C%F0%9D%9A%98%F0%9D%9A%97%F0%9D%9A%8C%F0%9D%9A%9E%F0%9D%9A%9B%F0%9D%9A%9B%F0%9D%9A%8E%F0%9D%9A%97%F0%9D%9A%8C%F0%9D%9A%A2,-%F0%9D%9A%83%F0%9D%9A%91%F0%9D%9A%9B%F0%9D%9A%8E%F0%9D%9A%8A%F0%9D%9A%8D%F0%9D%9A%92%F0%9D%9A%97%F0%9D%9A%90,-%F0%9D%9A%82%F0%9D%9A%A2%F0%9D%9A%97%F0%9D%9A%8C%F0%9D%9A%91%F0%9D%9A%9B%F0%9D%9A%98%F0%9D%9A%97%F0%9D%9A%92%F0%9D%9A%A3%F0%9D%9A%8A%F0%9D%9A%9D%F0%9D%9A%92%F0%9D%9A%98%F0%9D%9A%97)
+* [𝚄𝚗𝚍𝚎𝚛𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚌𝚘𝚗𝚌𝚞𝚛𝚛𝚎𝚗𝚌𝚢, 𝚃𝚑𝚛𝚎𝚊𝚍𝚒𝚗𝚐, 𝚂𝚢𝚗𝚌𝚑𝚛𝚘𝚗𝚒𝚣𝚊𝚝𝚒𝚘𝚗](https://github.com/devrath/android-handler-thread/wiki/Understanding-%E2%80%90-Concurrency,-Threading,-Synchronization)
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
