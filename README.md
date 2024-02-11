@@ -10,7 +10,7 @@ https://medium.com/@devrath.dev595/decoding-android-core-threading-concepts-on-t
 ## **`Fundamentals`** 📼
 * [𝚄𝚗𝚍𝚎𝚛𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚌𝚘𝚗𝚌𝚞𝚛𝚛𝚎𝚗𝚌𝚢, 𝚃𝚑𝚛𝚎𝚊𝚍𝚒𝚗𝚐, 𝚂𝚢𝚗𝚌𝚑𝚛𝚘𝚗𝚒𝚣𝚊𝚝𝚒𝚘𝚗](https://github.com/devrath/android-handler-thread/wiki/Understanding-%E2%80%90-Concurrency,-Threading,-Synchronization)
 * `Thread basics`
-  * [`Starting a thread`](https://github.com/devrath/android-handler-thread/wiki/Thread-Functionalities-:-Starting-a-thread)
+  * [`𝚂𝚝𝚊𝚛𝚝𝚒𝚗𝚐 𝚊 𝚝𝚑𝚛𝚎𝚊𝚍`](https://github.com/devrath/android-handler-thread/wiki/Thread-Functionalities-:-Starting-a-thread)
   * [`𝚁𝚊𝚌𝚎 𝙲𝚘𝚗𝚍𝚒𝚝𝚒𝚘𝚗𝚜 𝚊𝚗𝚍 𝙲𝚛𝚒𝚝𝚒𝚌𝚊𝚕 𝚂𝚎𝚌𝚝𝚒𝚘𝚗𝚜`](https://github.com/devrath/android-handler-thread/wiki/Race-Conditions-and-Critical-Sections)
 
 
